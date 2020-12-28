@@ -1,0 +1,22 @@
+backend:
+  name: github
+  repo: kuroneko913/gatsby-starter-netlify-cms
+  branch: master
+
+media_folder: static/images/uploaded
+public_folder: /images/uploaded
+
+collections:
+  - name: "blog"
+    label: "Blog"
+    folder: "content/blog"
+    create: true
+    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
+    editor:
+      preview: true # プレビュー表示を有効化
+    publish_mode: editorial_workflow # ワークフロー管理を有効化
+    fields:
+      - { label: "Title", name: "title", widget: "string" }
+      - { label: "Publish Date", name: "date", widget: "datetime" }
+      - { label: "Description", name: "description", widget: "string" }
+      - { label: "Body", name: "body", widget: "markdown" }
