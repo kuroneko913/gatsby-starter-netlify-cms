@@ -43,6 +43,10 @@ const SEO = ({ description, lang, meta, title }) => {
           content: metaDescription,
         },
         {
+          name: `google-site-verification`,
+          content: `ChlpdBy_k7fv6vJPBEIcVrALoANld5sNqdHa2hBAo10`
+        },
+        {
           property: `og:title`,
           content: title,
         },
