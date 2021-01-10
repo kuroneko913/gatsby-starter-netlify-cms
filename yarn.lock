@@ -6741,6 +6741,13 @@ gatsby-plugin-sharp@^2.8.0:
     svgo "1.3.2"
     uuid "3.4.0"
 
+gatsby-plugin-twitter@^2.7.0:
+  version "2.7.0"
+  resolved "https://registry.yarnpkg.com/gatsby-plugin-twitter/-/gatsby-plugin-twitter-2.7.0.tgz#492bc9abfb0c3eb8b5edd731a7fe51e4673dfdec"
+  integrity sha512-KHSS2M+BX7VHWfSYxkmzsTCG6G/NP+AVc15uZN0eu2gPKHcqwp/Ko53FAsnxI3avsEfbdz8kff0y8WgHmMjUpQ==
+  dependencies:
+    "@babel/runtime" "^7.12.5"
+
 gatsby-plugin-typescript@^2.9.0:
   version "2.9.0"
   resolved "https://registry.yarnpkg.com/gatsby-plugin-typescript/-/gatsby-plugin-typescript-2.9.0.tgz#6ad24dfdd1bc28e507a7762aba4ec6da36da6cd4"
@@ -6845,6 +6852,14 @@ gatsby-remark-copy-linked-files@^2.4.0:
     path-is-inside "^1.0.2"
     probe-image-size "^5.0.0"
     unist-util-visit "^1.4.1"
+
+gatsby-remark-embed-youtube@0.0.7:
+  version "0.0.7"
+  resolved "https://registry.yarnpkg.com/gatsby-remark-embed-youtube/-/gatsby-remark-embed-youtube-0.0.7.tgz#80f2407be37bce854f880b08c78d8a05ea2d1459"
+  integrity sha512-N+PgzQZW97ba0Hg0XaUQWbxekgASlx66WR9qCVq/ltG/pAyMGb+Lh0ls7a1JENDg+o+a3ty6gp7oKx/FbWnfOg==
+  dependencies:
+    babel-runtime "^6.26.0"
+    unist-util-visit "^1.1.3"
 
 gatsby-remark-images@^3.5.1:
   version "3.8.1"
@@ -15591,7 +15606,7 @@ unist-util-visit-parents@^3.0.0:
     "@types/unist" "^2.0.0"
     unist-util-is "^4.0.0"
 
-unist-util-visit@^1.0.0, unist-util-visit@^1.1.0, unist-util-visit@^1.4.1:
+unist-util-visit@^1.0.0, unist-util-visit@^1.1.0, unist-util-visit@^1.1.3, unist-util-visit@^1.4.1:
   version "1.4.1"
   resolved "https://registry.yarnpkg.com/unist-util-visit/-/unist-util-visit-1.4.1.tgz#4724aaa8486e6ee6e26d7ff3c8685960d560b1e3"
   integrity sha512-AvGNk7Bb//EmJZyhtRUnNMEpId/AZ5Ph/KUpTI09WHQuDZHKovQ1oEv3mfmKpWKtoMzyMC4GLBm1Zy5k12fjIw==
