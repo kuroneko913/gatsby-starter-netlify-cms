@@ -6,7 +6,7 @@ module.exports = {
       summary: `ひよっこエンジニア, いつかは自分でサービスを作りたいとずっと言ってる`,
     },
     description: `くろねこなのにひよこかよ！好きなこと、気になること、興味があることをひたすら語ってみたいと思う。`,
-    siteUrl: `https://gatsby-starter-blog-demo.netlify.app/`,
+    siteUrl: `https://myblackcat913.com/`,
     social: {
       twitter: `myblackcat7112`,
     },
