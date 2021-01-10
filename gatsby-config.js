@@ -5,7 +5,7 @@ module.exports = {
       name: `Blackcat`,
       summary: `ひよっこエンジニア, いつかは自分でサービスを作りたいとずっと言ってる`,
     },
-    description: `くろねこなのにひよこかよ！`,
+    description: `くろねこなのにひよこかよ！好きなこと、気になること、興味があることをひたすら語ってみたいと思う。`,
     siteUrl: `https://gatsby-starter-blog-demo.netlify.app/`,
     social: {
       twitter: `myblackcat7112`,
