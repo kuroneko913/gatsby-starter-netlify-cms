@@ -4,6 +4,7 @@ import { Link, graphql } from "gatsby"
 import Bio from "../components/bio"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
+import { TwitterIcon, TwitterShareButton } from "react-share"
 
 const BlogIndex = ({ data, location }) => {
   const siteTitle = data.site.siteMetadata?.title || `Title`
@@ -30,7 +31,7 @@ const BlogIndex = ({ data, location }) => {
       <ol style={{ listStyle: `none` }}>
         {posts.map(post => {
           const title = post.frontmatter.title || post.fields.slug
-
+          const url = location.origin + post.fields.slug
           return (
             <li key={post.fields.slug}>
               <article
@@ -44,6 +45,11 @@ const BlogIndex = ({ data, location }) => {
                       <span itemProp="headline">{title}</span>
                     </Link>
                   </h2>
+                  <div>
+                  <TwitterShareButton url={url} className="mr-2">
+                    <TwitterIcon size={40} round />
+                  </TwitterShareButton>
+                  </div>
                   <small>{post.frontmatter.date}</small>
                 </header>
                 <section>
