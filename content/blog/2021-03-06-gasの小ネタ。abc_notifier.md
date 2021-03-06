@@ -11,7 +11,7 @@ GoogleAppsScriptを使うと、GoogleCalendarやGmailなどのGoogleのサービ
 
 ## 処理内容
 
-内容的にはあまり難しいことではないので、詳細のコードは[こちら](https://github.com/kuroneko913/ABC_Notifier)を見ていただくことにします。実装の大まかな部分を説明していこうと思います。
+内容的にはあまり難しいことではないので、詳細のコードは[こちら](https://github.com/kuroneko913/ABC_Notifier)を見ていただくことにし、実装の大まかな部分を説明していこうと思います。
 
 ### ContestNotify 関数
 
@@ -29,7 +29,7 @@ function ContestNotify() {
 }
 ```
 
-各コンテストの告知メールがあるかを確認しています。
+各コンテストの告知メールのタイトルを実際の処理関数に渡しています。
 
 ### AtCoderNotify 関数
 
