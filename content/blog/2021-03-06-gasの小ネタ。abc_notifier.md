@@ -82,5 +82,9 @@ PropertiesService.getScriptProperties().getProperty('CALENDAR_ID')
 これにより、スクリプトに直接記載するのを避けるべき定数を外部から指定できます。
 新エディタでもきっと使えるはず...
 
+実は作ったのは、結構前だったりします。
+
+<blockquote class="twitter-tweet"><p lang="und" dir="ltr"><a href="https://t.co/qwsau4uykB">pic.twitter.com/qwsau4uykB</a></p>&mdash; Blackcat🌗 (@myblackcat7112) <a href="https://twitter.com/myblackcat7112/status/1317460563077648391?ref_src=twsrc%5Etfw">October 17, 2020</a></blockquote>
+
 # まとめ
 GASを使ってAtCoderコンテストのリマインダーを行う仕組みを実装しました。その際にGASのコードをGitHubで管理するChrome拡張を試してみました。最後にプライベートな定数をスクリプトのプロパティに保存するようにしてみました。
