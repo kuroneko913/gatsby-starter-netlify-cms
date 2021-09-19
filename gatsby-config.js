@@ -79,7 +79,7 @@ module.exports = {
       resolve: `gatsby-plugin-sitemap`,
       options: {
         output: `/sitemap.xml`,
-        excludes: [],
+        exclude: [],
       }
     },
     // this (optional) plugin enables Progressive Web App + Offline functionality
