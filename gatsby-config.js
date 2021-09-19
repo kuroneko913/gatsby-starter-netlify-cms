@@ -45,6 +45,15 @@ module.exports = {
               wrapperStyle: `margin-bottom: 1.0725rem`,
             },
           },
+          {
+            resolve: "gatsby-remark-external-links",
+            options: {
+              // デフォルトは _blank
+              target: "_self",
+              // デフォルトは nofollow noopener noreferrer
+              rel: "noopener noreferrer"
+            }
+          },
           `gatsby-remark-prismjs`,
           `gatsby-remark-copy-linked-files`,
           `gatsby-remark-smartypants`,
@@ -80,6 +89,12 @@ module.exports = {
       options: {
         output: `/sitemap.xml`,
         exclude: [],
+      }
+    },
+    {
+      resolve: `gatsby-plugin-disqus`,
+      options: {
+        shortname: `kuroneko913-blog`
       }
     },
     // this (optional) plugin enables Progressive Web App + Offline functionality
