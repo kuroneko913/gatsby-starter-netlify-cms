@@ -113,3 +113,14 @@ exports.createSchemaCustomization = ({ actions }) => {
     }
   `)
 }
+
+exports.onCreateWebpackConfig = ({ actions }) => {
+  actions.setWebpackConfig({
+    node: {
+      fs: "empty",
+      tls: "empty",
+      net: "empty",
+      child_process: "empty",
+    },
+  })
+}

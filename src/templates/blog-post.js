@@ -4,7 +4,7 @@ import { Link, graphql } from "gatsby"
 import Bio from "../components/bio"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
-import Disqus from 'gatsby-plugin-disqus'
+import Like from "../components/like"
 
 const BlogPostTemplate = ({ data, location }) => {
   const post = data.markdownRemark
@@ -31,11 +31,7 @@ const BlogPostTemplate = ({ data, location }) => {
           itemProp="articleBody"
         />
         <hr />
-        <Disqus 
-          identifier={post.id}
-          title={post.frontmatter.title}
-          url={location.href}
-        />
+        <Like />
         <footer>
           <Bio />
         </footer>
