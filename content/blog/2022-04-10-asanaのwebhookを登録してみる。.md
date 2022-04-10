@@ -47,7 +47,7 @@ AsanaのWebhookを利用するには、WebhookURLなどの情報を持たせたP
 
 ## WebhookURLの準備
 
-先述したようにWebhookのエンドポイントには、Asana側からリクエスト時に付与されるX-Hooks-Secretなる値を読み取ることが要求される。ただのPOSTリクエストを受け取るエンドポイントであれば、GASでPOSTリクエストを受け付けられるようにしておけばいいのだが、どうやら現状のGASではリクエストヘッダーの値を確認することができないようだ。
+先述したようにWebhookのエンドポイントには、Asana側からリクエスト時に付与されるX-Hook-Secretなる値を読み取ることが要求される。ただのPOSTリクエストを受け取るエンドポイントであれば、GASでPOSTリクエストを受け付けられるようにしておけばいいのだが、どうやら現状のGASではリクエストヘッダーの値を確認することができないようだ。
 
 > GAS の Web App ではリクエストヘッダーにアクセスすることができません。
 > https://qiita.com/seratch/items/2158cb0abed5b8e12809#gas-%E3%81%AE-web-app-%E3%81%A7%E3%81%AF-x-slack-signature-%E3%82%92%E6%A4%9C%E8%A8%BC%E3%81%A7%E3%81%8D%E3%81%BE%E3%81%9B%E3%82%93
