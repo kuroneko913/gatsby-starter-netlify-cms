@@ -27,7 +27,7 @@ SlackとかGithubとかそのようなWebサービスにはAPIの他にWebhook�
 > と言われたら
 > 「ユーザーが投稿などをした際に、Slackが指定したURLにPOSTリクエストしてくれるから、それ使おうぜ！」
 > と言っているものだと思えば良いと思います。
-> https://qiita.com/soarflat/items/ed970f6dc59b2ab76169#%E7%B5%82%E3%82%8F%E3%82%8A
+> [Webhookとは？](https://qiita.com/soarflat/items/ed970f6dc59b2ab76169#%E7%B5%82%E3%82%8F%E3%82%8A)
 
 これを使うことによりイベントが発生するのを検出するためにWebAPIのリクエストを頻繁に送るようなことをしなくて済む。
 
@@ -50,12 +50,12 @@ AsanaのWebhookを利用するには、WebhookURLなどの情報を持たせたP
 先述したようにWebhookのエンドポイントには、Asana側からリクエスト時に付与されるX-Hook-Secretなる値を読み取ることが要求される。ただのPOSTリクエストを受け取るエンドポイントであれば、GASでPOSTリクエストを受け付けられるようにしておけばいいのだが、どうやら現状のGASではリクエストヘッダーの値を確認することができないようだ。
 
 > GAS の Web App ではリクエストヘッダーにアクセスすることができません。
-> https://qiita.com/seratch/items/2158cb0abed5b8e12809#gas-%E3%81%AE-web-app-%E3%81%A7%E3%81%AF-x-slack-signature-%E3%82%92%E6%A4%9C%E8%A8%BC%E3%81%A7%E3%81%8D%E3%81%BE%E3%81%9B%E3%82%93
+> [Google Apps Script (GAS) で Slack 連携を実装する前に知っておくとよい 5 つのこと](https://qiita.com/seratch/items/2158cb0abed5b8e12809#gas-%E3%81%AE-web-app-%E3%81%A7%E3%81%AF-x-slack-signature-%E3%82%92%E6%A4%9C%E8%A8%BC%E3%81%A7%E3%81%8D%E3%81%BE%E3%81%9B%E3%82%93)
 >
 > なお、doPost()のパラメータオブジェクトにHeader情報を直接取得できるプロパティはないと思います。
 > （少なくともリファレンスではそのような記述を見つけることはできませんでした）
 > 別途調べたところ、ChatWorkでは類似の問題（doPostでのヘッダー情報取得）への対応をしたばかりです。
-> https://teratail.com/questions/117983
+> [HTTPリクエストのヘッダに含まれる値取得し、その値をヘッダに含めてレスポンスを返したい](https://teratail.com/questions/117983)
 
 そのため、今回はWebhookのエンドポイントにAWSの[API Gateway](https://ap-northeast-1.console.aws.amazon.com/apigateway)を使うことにした。
 
